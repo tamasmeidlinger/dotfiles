@@ -1,0 +1,43 @@
+#!/bin/bash
+
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+ITEM_DIR="$CONFIG_DIR/items"
+sketchybar --bar position=top height=30 blur_radius=30 color=0x00000000 padding_left=5 padding_right=5
+
+default=(
+  padding_left=0
+  padding_right=0
+  padding_top=0
+  padding_bottom=0
+  icon.font="Hack Nerd Font:Bold:17.0"
+  label.font="Hack Nerd Font:Bold:14.0"
+  icon.color=0xffffffff
+  label.color=0xffffffff
+  background.color=0xff232322
+  background.corner_radius=5
+  background.height=24
+  background.padding_left=5
+  background.padding_right=5
+  background.padding_top=5
+  background.padding_bottom=5
+  icon.padding_left=10
+  icon.padding_right=0
+  label.padding_left=10
+  label.padding_right=10
+)
+sketchybar --default "${default[@]}"
+
+# -- Right Side Items --
+
+sketchybar --add item calendar right \
+  --set calendar icon="󰃰" \
+  update_freq=20 \
+  script="$PLUGIN_DIR/calendar.sh"
+
+source $ITEM_DIR/volume.sh
+source $ITEM_DIR/battery.sh
+
+# -- Left Side Items --
+source $ITEM_DIR/aerospace.sh
+source $ITEM_DIR/front_app.sh
+sketchybar --update

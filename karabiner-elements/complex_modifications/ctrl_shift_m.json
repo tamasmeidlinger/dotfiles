@@ -1,0 +1,16 @@
+{
+  "description": "Ctrl+Shift+M → Right Arrow",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "m",
+        "modifiers": {
+          "mandatory": ["control", "shift"],
+          "optional": ["any"]
+        }
+      },
+      "to": [{ "key_code": "right_arrow" }],
+      "type": "basic"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Ctrl+Shift+L → Option+Backspace",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "l",
+        "modifiers": {
+          "mandatory": ["control", "shift"],
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "delete_or_backspace",
+          "modifiers": ["option"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}

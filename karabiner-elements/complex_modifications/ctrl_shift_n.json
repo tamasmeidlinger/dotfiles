@@ -1,0 +1,16 @@
+{
+  "description": "Ctrl+Shift+N → Left Arrow",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "n",
+        "modifiers": {
+          "mandatory": ["control", "shift"],
+          "optional": ["any"]
+        }
+      },
+      "to": [{ "key_code": "left_arrow" }],
+      "type": "basic"
+    }
+  ]
+}
