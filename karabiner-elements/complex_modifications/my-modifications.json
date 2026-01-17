@@ -1,0 +1,166 @@
+{
+  "title": "My Modifications",
+  "rules": [
+    {
+      "description": "Change spacebar to left_shift. (Post spacebar if pressed alone)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": { "optional": ["any"] }
+          },
+          "to": [{ "key_code": "left_shift" }],
+          "to_if_alone": [{ "key_code": "spacebar" }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Change Caps Lock to Esc if pressed alone, Control if held",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": { "optional": ["any"] }
+          },
+          "to": [{ "key_code": "left_control" }],
+          "to_if_alone": [{ "key_code": "escape" }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+  "description": "IF Zen: Ctrl+Shift+O → Ctrl+Tab",
+  "manipulators": [
+    {
+      "conditions": [
+        {
+          "bundle_identifiers": ["app\\.zen-browser\\.zen"],
+          "type": "frontmost_application_if"
+        }
+      ],
+      "from": {
+        "key_code": "o",
+        "modifiers": {
+          "mandatory": ["control", "shift"],
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "tab",
+          "modifiers": ["control"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+},
+{
+  "description": "IF Zen: Ctrl+Shift+I → Ctrl+Shift+Tab",
+  "manipulators": [
+    {
+      "conditions": [
+        {
+          "bundle_identifiers": ["app\\.zen-browser\\.zen"],
+          "type": "frontmost_application_if"
+        }
+      ],
+      "from": {
+        "key_code": "i",
+        "modifiers": {
+          "mandatory": ["control", "shift"],
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "tab",
+          "modifiers": ["control", "shift"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+},
+{
+  "description": "ELSE (not Zen): Ctrl+Shift+I → Ctrl+Option+Left",
+  "manipulators": [
+    {
+      "conditions": [
+        {
+          "bundle_identifiers": ["app\\.zen-browser\\.zen"],
+          "type": "frontmost_application_unless"
+        }
+      ],
+      "from": {
+        "key_code": "i",
+        "modifiers": {
+          "mandatory": ["control", "shift"],
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "left_arrow",
+          "modifiers": ["command", "option"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+},
+{
+  "description": "ELSE (not Zen): Ctrl+Shift+O → Ctrl+Option+Right",
+  "manipulators": [
+    {
+      "conditions": [
+        {
+          "bundle_identifiers": ["app\\.zen-browser\\.zen"],
+          "type": "frontmost_application_unless"
+        }
+      ],
+      "from": {
+        "key_code": "o",
+        "modifiers": {
+          "mandatory": ["control", "shift"],
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "right_arrow",
+          "modifiers": ["command", "option"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+},
+{
+  "description": "Ctrl+Shift+L → Option+Backspace",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "l",
+        "modifiers": {
+          "mandatory": ["control", "shift"],
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "delete_or_backspace",
+          "modifiers": ["option"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
+
+
+
+
+  ]
+}
