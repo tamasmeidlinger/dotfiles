@@ -4,3 +4,5 @@
 vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.opt.breakindent = true
+
+vim.opt.guicursor = "n-v-c:block," .. "i-ci-ve:ver25-blinkon0," .. "t:ver25-blinkon0"
