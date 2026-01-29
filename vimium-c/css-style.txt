@@ -1,5 +1,7 @@
 .LH, .D>.LH { background: #2f2f2f; color: white }
 .LH { border: /*!DPI*/ 1px solid black; font-size: 15px }
 .LH { font-weight: 600 }
+.MC { color: #2f2f2f; }
 /* #omni */
 .s { background-color: #d8e3f3; }
+
