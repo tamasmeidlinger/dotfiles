@@ -1,0 +1,16 @@
+{
+  "description": "Cmd+Enter → open new WezTerm",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "return_or_enter",
+        "modifiers": {
+          "mandatory": ["left_command"],
+          "optional": ["any"]
+        }
+      },
+      "to": [{ "shell_command": "open -n -a WezTerm" }],
+      "type": "basic"
+    }
+  ]
+}
