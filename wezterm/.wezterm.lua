@@ -21,4 +21,6 @@ config.default_cursor_style = "SteadyBar"
 
 config.cursor_thickness = 2
 
+config.window_close_confirmation = "NeverPrompt"
+
 return config
