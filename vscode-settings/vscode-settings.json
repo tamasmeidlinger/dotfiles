@@ -75,19 +75,8 @@
       "after": ["<leader>", "<leader>", "F"]
     },
     {
-      // H → previous tab
-      "before": ["H"],
-      "commands": ["workbench.action.previousEditor"]
-    },
-    {
-      // L → next tab
-      "before": ["L"],
-      "commands": ["workbench.action.nextEditor"]
-    },
-    {
-      // <leader>b d → close current tab
-      "before": ["<leader>", "b", "d"],
-      "commands": ["workbench.action.closeActiveEditor"]
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
     }
   ],
   "vscode_custom_css.imports": [
