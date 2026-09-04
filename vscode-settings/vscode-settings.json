@@ -1,0 +1,134 @@
+{
+  // WORKBENCH SETTINGS
+  "workbench.statusBar.visible": false,
+  "workbench.navigationControl.enabled": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.fontAliasing": "antialiased",
+  "workbench.editor.useModal": "off",
+  "workbench.browser.showInTitleBar": false,
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#00000025"
+    //   "editor.background": "#131313",
+    //   "sideBar.background": "#171717",
+    //   "editorGutter.background": "#131313",
+    //   "tab.activeBackground": "#131313",
+    //   "tab.inactiveBackground": "#1a1a1a",
+    //   "tab.border": "#131313",
+    //   "tab.activeBorderTop": "#131313",
+    //   "titleBar.activeBackground": "#131313",
+    //   "titleBar.inactiveBackground": "#131313",
+    //   "tab.activeForeground": "#ededed"
+  },
+  // EDITOR SETTINGS
+  "editor.fontFamily": "CaskaydiaMono Nerd Font",
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.fontWeight": "450",
+  "editor.fontSize": 15,
+  "editor.fontLigatures": false,
+  "editor.lineNumbers": "relative",
+  "editor.overviewRulerBorder": false,
+  "editor.semanticHighlighting.enabled": false,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.allowVariableFonts": false,
+  "editor.fontVariations": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.occurrencesHighlight": "off",
+  "editor.lineHeight": 1.35,
+  // OTHER SETTINGS
+  "breadcrumbs.enabled": false,
+  "window.commandCenter": false,
+  "extensions.ignoreRecommendations": true,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "diffEditor.wordWrap": "on",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  // "catppuccin.italicComments": false,
+  // "catppuccin.italicKeywords": false,
+  "chat.titleBar.signIn.enabled": false,
+  "chat.titleBar.openInAgentsWindow.enabled": false,
+  "svelte.enable-ts-plugin": true,
+  "python.analysis.typeCheckingMode": "standard",
+  // DEFAULT FORMATTERS
+  // "[php]": {
+  //   "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  // },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  // VIM SETTINGS
+  // Use space as leader key
+  "vim.leader": " ",
+  // Enable EasyMotion
+  "vim.easymotion": true,
+  // Normal mode keybindings
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      // s → EasyMotion forward (1 char)
+      "before": ["s"],
+      "after": ["<leader>", "<leader>", "f"]
+    },
+    {
+      // S → EasyMotion backward (1 char)
+      "before": ["S"],
+      "after": ["<leader>", "<leader>", "F"]
+    },
+    {
+      // H → previous tab
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      // L → next tab
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      // <leader>b d → close current tab
+      "before": ["<leader>", "b", "d"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    }
+  ],
+  "vscode_custom_css.imports": [
+    "file:///Users/tamasm/.config/vscode-custom/vscode-styles.css"
+  ],
+  "workbench.colorTheme": "React Theme",
+  "workbench.activityBar.location": "hidden",
+  "editor.stickyScroll.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.copyWithSyntaxHighlighting": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.emptySelectionClipboard": false,
+  "workbench.editor.enablePreview": false,
+  "window.newWindowDimensions": "inherit",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "files.trimTrailingWhitespace": true,
+  "diffEditor.renderSideBySide": false,
+  "editor.snippetSuggestions": "top",
+  "editor.detectIndentation": false,
+  "window.nativeFullScreen": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "editor.guides.indentation": false,
+  // Silence the Noise
+  "scm.diffDecorations": "none",
+  "editor.hover.delay": 1500,
+  "editor.matchBrackets": "never",
+  "workbench.tips.enabled": false,
+  "editor.colorDecorators": false,
+  "git.decorations.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.lightbulb.enabled": "off",
+  "editor.selectionHighlight": false,
+  "editor.renderLineHighlight": "none",
+  "problems.decorations.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.minimap.enabled": false
+}
