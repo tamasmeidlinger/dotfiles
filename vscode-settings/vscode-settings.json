@@ -70,13 +70,23 @@
       "after": ["<leader>", "<leader>", "f"]
     },
     {
+      // H → previous tab
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      // L → next tab
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
       // S → EasyMotion backward (1 char)
       "before": ["S"],
       "after": ["<leader>", "<leader>", "F"]
     },
     {
       "before": ["<leader>", "e"],
-      "commands": ["workbench.view.explorer"]
+      "commands": ["workbench.action.toggleSidebarVisibility"]
     }
   ],
   "vscode_custom_css.imports": [
