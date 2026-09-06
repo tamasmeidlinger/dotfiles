@@ -87,6 +87,16 @@
     {
       "before": ["<leader>", "e"],
       "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      // Open command pallette
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      // Open file searcher
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.quickOpen"]
     }
   ],
   "vscode_custom_css.imports": [
@@ -129,5 +139,7 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.tree.indent": 15
 }
