@@ -1,0 +1,103 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "shift+cmd+b",
+    "command": "-workbench.action.tasks.build",
+    "when": "taskCommandsRegistered"
+  },
+  {
+    "key": "shift+cmd+b",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "space",
+    "command": "-filesExplorer.openFilePreserveFocus",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "space",
+    "command": "-list.toggleExpand",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "space",
+    "command": "-list.stickyScrolltoggleExpand",
+    "when": "treestickyScrollFocused"
+  },
+  {
+    "key": "space",
+    "command": "-breadcrumbs.revealFocused",
+    "when": "breadcrumbsActive && breadcrumbsVisible"
+  },
+  {
+    "key": "space",
+    "command": "-debug.toggleBreakpoint",
+    "when": "breakpointsFocused && !inputFocus"
+  },
+  {
+    "key": "space",
+    "command": "-notification.toggle",
+    "when": "notificationFocus"
+  },
+  {
+    "key": "space",
+    "command": "-quickInput.toggleCheckbox",
+    "when": "inQuickInput && !inputFocus && quickInputType == 'quickPick' || inQuickInput && !inputFocus && quickInputType == 'quickTree'"
+  },
+  {
+    "key": "space",
+    "command": "-refactorPreview.toggleCheckedState",
+    "when": "listFocus && refactorPreview.enabled && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "space",
+    "command": "-toggleSectionCodeAction",
+    "when": "codeActionMenuVisible && !codeActionMenuFilterFocused"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-actions.findWithSelection"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-editor.action.toggleScreenReaderAccessibilityMode",
+    "when": "accessibilityHelpIsShown"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-workbench.action.chat.newChat",
+    "when": "chatIsEnabled && inChat && !inChatEditor && chatLocation == 'panel'"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-workbench.action.openChat",
+    "when": "chatIsEnabled && inChat && inChatEditor"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-chatEditor.action.undoHunk",
+    "when": "chatEdits.cursorInChangeRange && chatEdits.hasEditorModifications && editorFocus && !chatEdits.isCurrentlyBeingModified || chatEdits.cursorInChangeRange && chatEdits.hasEditorModifications && notebookCellListFocused && !chatEdits.isCurrentlyBeingModified"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "cmd+f",
+    "command": "explorer.newFolder"
+  }
+]
