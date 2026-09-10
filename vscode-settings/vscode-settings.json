@@ -9,7 +9,7 @@
   "workbench.browser.showInTitleBar": false,
   "workbench.colorCustomizations": {
     "editor.lineHighlightBackground": "#00000025"
-    //   "editor.background": "#131313",
+    // "editor.background": "#131313",
     //   "sideBar.background": "#171717",
     //   "editorGutter.background": "#131313",
     //   "tab.activeBackground": "#131313",
@@ -29,13 +29,20 @@
   "editor.fontLigatures": false,
   "editor.lineNumbers": "relative",
   "editor.overviewRulerBorder": false,
-  "editor.semanticHighlighting.enabled": false,
+  "editor.semanticHighlighting.enabled": true,
   // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.allowVariableFonts": false,
   "editor.fontVariations": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.occurrencesHighlight": "off",
   "editor.lineHeight": 1.35,
+  "editor.semanticTokenColorCustomizations": {
+    "[React Theme]": {
+      "rules": {
+        "variable": "#E6E6E6"
+      }
+    }
+  },
   // OTHER SETTINGS
   "breadcrumbs.enabled": false,
   "window.commandCenter": false,
@@ -56,6 +63,10 @@
   // },
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true
   },
   // VIM SETTINGS
   // Use space as leader key
@@ -103,7 +114,6 @@
     "file:///Users/tamasm/.config/vscode-custom/vscode-styles.css"
   ],
   "workbench.colorTheme": "React Theme",
-  "workbench.activityBar.location": "hidden",
   "editor.stickyScroll.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
   "editor.copyWithSyntaxHighlighting": false,
@@ -141,5 +151,6 @@
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.minimap.enabled": false,
   "workbench.tree.renderIndentGuides": "always",
-  "workbench.tree.indent": 15
+  "workbench.tree.indent": 15,
+  "workbench.activityBar.location": "hidden"
 }
