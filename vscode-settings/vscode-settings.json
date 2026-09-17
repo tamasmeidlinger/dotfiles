@@ -1,4 +1,27 @@
 {
+  // DEFAULT FORMATTERS
+  // "[php]": {
+  //   "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  // },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
   // WORKBENCH SETTINGS
   "workbench.statusBar.visible": false,
   "workbench.navigationControl.enabled": false,
@@ -7,8 +30,18 @@
   "workbench.fontAliasing": "antialiased",
   "workbench.editor.useModal": "off",
   "workbench.browser.showInTitleBar": false,
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.colorTheme": "React Theme",
+  "workbench.tips.enabled": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none",
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.tree.indent": 15,
+  "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
-    "editor.lineHighlightBackground": "#00000025"
+    "editor.lineHighlightBackground": "#E3E3E3"
     // "editor.background": "#131313",
     //   "sideBar.background": "#171717",
     //   "editorGutter.background": "#131313",
@@ -30,12 +63,31 @@
   "editor.lineNumbers": "relative",
   "editor.overviewRulerBorder": false,
   "editor.semanticHighlighting.enabled": true,
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.allowVariableFonts": false,
   "editor.fontVariations": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.occurrencesHighlight": "off",
   "editor.lineHeight": 1.35,
+  "editor.stickyScroll.enabled": false,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.emptySelectionClipboard": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.detectIndentation": false,
+  "editor.guides.indentation": false,
+  "editor.hover.delay": 1500,
+  "editor.matchBrackets": "never",
+  "editor.colorDecorators": false,
+  "editor.lightbulb.enabled": "off",
+  "editor.selectionHighlight": false,
+  "editor.renderLineHighlight": "none",
+  "editor.renderControlCharacters": false,
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.minimap.enabled": false,
   "editor.semanticTokenColorCustomizations": {
     "[React Theme]": {
       "rules": {
@@ -43,7 +95,21 @@
       }
     }
   },
+
   // OTHER SETTINGS
+  "problems.decorations.enabled": true,
+  "explorer.decorations.badges": true,
+  "explorer.decorations.colors": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "window.newWindowDimensions": "inherit",
+  "diffEditor.renderSideBySide": false,
+  "window.nativeFullScreen": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "scm.diffDecorations": "none",
+  "git.decorations.enabled": false,
+  "material-icon-theme.files.color": "#90a4ae",
   "breadcrumbs.enabled": false,
   "window.commandCenter": false,
   "extensions.ignoreRecommendations": true,
@@ -51,23 +117,11 @@
   "explorer.compactFolders": false,
   "diffEditor.wordWrap": "on",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
-  // "catppuccin.italicComments": false,
-  // "catppuccin.italicKeywords": false,
   "chat.titleBar.signIn.enabled": false,
   "chat.titleBar.openInAgentsWindow.enabled": false,
   "svelte.enable-ts-plugin": true,
   "python.analysis.typeCheckingMode": "standard",
-  // DEFAULT FORMATTERS
-  // "[php]": {
-  //   "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
-  // },
-  "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.formatOnSave": true
-  },
+
   // VIM SETTINGS
   // Use space as leader key
   "vim.leader": " ",
@@ -108,49 +162,16 @@
       // Open file searcher
       "before": ["<leader>", "f"],
       "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      // Go to definition
+      "before": ["<leader>", "c", "c"],
+      "commands": ["workbench.action.quickOpen"]
     }
   ],
   "vscode_custom_css.imports": [
     "file:///Users/tamasm/.config/vscode-custom/vscode-styles.css"
   ],
-  "workbench.colorTheme": "React Theme",
-  "editor.stickyScroll.enabled": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.copyWithSyntaxHighlighting": false,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.emptySelectionClipboard": false,
-  "workbench.editor.enablePreview": false,
-  "window.newWindowDimensions": "inherit",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "files.trimTrailingWhitespace": true,
-  "diffEditor.renderSideBySide": false,
-  "editor.snippetSuggestions": "top",
-  "editor.detectIndentation": false,
-  "window.nativeFullScreen": true,
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "editor.guides.indentation": false,
-  // Silence the Noise
-  "scm.diffDecorations": "none",
-  "editor.hover.delay": 1500,
-  "editor.matchBrackets": "never",
-  "workbench.tips.enabled": false,
-  "editor.colorDecorators": false,
-  "git.decorations.enabled": false,
-  "workbench.startupEditor": "none",
-  "editor.lightbulb.enabled": "off",
-  "editor.selectionHighlight": false,
-  "editor.renderLineHighlight": "none",
-  "problems.decorations.enabled": false,
-  "editor.renderControlCharacters": false,
-  "editor.gotoLocation.multipleReferences": "goto",
-  "editor.gotoLocation.multipleDefinitions": "goto",
-  "editor.gotoLocation.multipleDeclarations": "goto",
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "editor.gotoLocation.multipleImplementations": "goto",
-  "editor.gotoLocation.multipleTypeDefinitions": "goto",
-  "editor.minimap.enabled": false,
-  "workbench.tree.renderIndentGuides": "always",
-  "workbench.tree.indent": 15,
-  "workbench.activityBar.location": "hidden"
+  "workbench.editor.empty.hint": "hidden",
+  "js/ts.updateImportsOnFileMove.enabled": "always"
 }
