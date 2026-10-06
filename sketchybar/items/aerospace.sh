@@ -9,4 +9,13 @@ sketchybar --add item space left \
   icon="" \
   background.drawing=on \
   icon.drawing=on \
+  padding_right=-6 \
+  padding_left=3 \
   script="$CONFIG_DIR/plugins/aerospace.sh"
+
+# Add an item to act as a separator on the left side
+sketchybar --add item separator left \
+  --set separator icon="|" \
+  icon.color=0x99888888 \
+  label.drawing=off \
+  background.drawing=off
