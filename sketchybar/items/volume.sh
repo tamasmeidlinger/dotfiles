@@ -8,7 +8,7 @@ sketchybar --add item volume right \
 
 sketchybar --add item separator3 right \
   --set separator3 icon="|" \
-  icon.color=0x99888888 \
+  icon.color=0x88666666 \
   label.drawing=off \
   background.drawing=off
 

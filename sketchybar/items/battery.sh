@@ -9,7 +9,7 @@ sketchybar --add item battery right \
 # Add an item to act as a separator on the left side
 sketchybar --add item separator2 right \
   --set separator2 icon="|" \
-  icon.color=0x99888888 \
+  icon.color=0x88666666 \
   label.drawing=off \
   background.drawing=off
 

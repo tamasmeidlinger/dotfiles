@@ -16,6 +16,6 @@ sketchybar --add item space left \
 # Add an item to act as a separator on the left side
 sketchybar --add item separator left \
   --set separator icon="|" \
-  icon.color=0x99888888 \
+  icon.color=0x88666666 \
   label.drawing=off \
   background.drawing=off

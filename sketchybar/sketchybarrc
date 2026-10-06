@@ -2,7 +2,7 @@
 
 PLUGIN_DIR="$CONFIG_DIR/plugins"
 ITEM_DIR="$CONFIG_DIR/items"
-sketchybar --bar position=top height=24 blur_radius=30 color=0xff232322 padding_left=6 padding_right=4
+sketchybar --bar position=top height=24 blur_radius=30 color=0xff1a1a1a padding_left=6 padding_right=4
 
 default=(
   padding_left=0
@@ -11,9 +11,9 @@ default=(
   padding_bottom=0
   icon.font="CaskaydiaMono Nerd Font:Bold:16.0"
   label.font="CaskaydiaMono Nerd Font:Bold:14.0"
-  icon.color=0xffffffff
-  label.color=0xffffffff
-  background.color=0xff232322
+  icon.color=0xffdddddd
+  label.color=0xffdddddd
+  background.color=0xff1a1a1a
   background.corner_radius=5
   background.height=24
   background.padding_left=5
