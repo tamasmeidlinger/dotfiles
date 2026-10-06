@@ -21,7 +21,15 @@
     "editor.tabSize": 2,
     "editor.insertSpaces": true
   },
-
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
   // WORKBENCH SETTINGS
   "workbench.statusBar.visible": false,
   "workbench.navigationControl.enabled": false,
@@ -31,7 +39,6 @@
   "workbench.editor.useModal": "off",
   "workbench.browser.showInTitleBar": false,
   "workbench.iconTheme": "catppuccin-mocha",
-  "workbench.colorTheme": "React Theme",
   "workbench.tips.enabled": false,
   "workbench.editor.enablePreview": false,
   "workbench.startupEditor": "none",
@@ -39,19 +46,19 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.tree.indent": 15,
-  "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
-    "editor.lineHighlightBackground": "#E3E3E3"
-    // "editor.background": "#131313",
-    //   "sideBar.background": "#171717",
-    //   "editorGutter.background": "#131313",
-    //   "tab.activeBackground": "#131313",
-    //   "tab.inactiveBackground": "#1a1a1a",
-    //   "tab.border": "#131313",
-    //   "tab.activeBorderTop": "#131313",
-    //   "titleBar.activeBackground": "#131313",
-    //   "titleBar.inactiveBackground": "#131313",
-    //   "tab.activeForeground": "#ededed"
+    "sideBar.background": "#171717",
+    "editor.lineHighlightBackground": "#E3E3E3",
+    "editor.background": "#171717",
+    "editorGutter.background": "#171717",
+    "tab.activeBackground": "#202020",
+    "tab.activeForeground": "#ededed",
+    "tab.inactiveBackground": "#171717",
+    "tab.border": "#202020",
+    "tab.activeBorderTop": "#404040",
+    "titleBar.activeBackground": "#171717",
+    "titleBar.inactiveBackground": "#171717",
+    "editorGroupHeader.connectedTabsBackground": "#171717"
   },
   // EDITOR SETTINGS
   "editor.fontFamily": "CaskaydiaMono Nerd Font",
@@ -95,7 +102,6 @@
       }
     }
   },
-
   // OTHER SETTINGS
   "problems.decorations.enabled": true,
   "explorer.decorations.badges": true,
@@ -121,7 +127,6 @@
   "chat.titleBar.openInAgentsWindow.enabled": false,
   "svelte.enable-ts-plugin": true,
   "python.analysis.typeCheckingMode": "standard",
-
   // VIM SETTINGS
   // Use space as leader key
   "vim.leader": " ",
@@ -173,5 +178,9 @@
     "file:///Users/tamasm/.config/vscode-custom/vscode-styles.css"
   ],
   "workbench.editor.empty.hint": "hidden",
-  "js/ts.updateImportsOnFileMove.enabled": "always"
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "chat.disableAIFeatures": true,
+  "explorer.confirmPasteNative": false,
+  "workbench.colorTheme": "Dark Modern",
+  "workbench.activityBar.location": "hidden"
 }
