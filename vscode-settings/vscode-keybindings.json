@@ -149,5 +149,52 @@
     "key": "cmd+f12",
     "command": "-editor.action.revealDefinition",
     "when": "editorHasDefinitionProvider && editorTextFocus && isWeb"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "-notification.acceptPrimaryAction",
+    "when": "accessibilityModeEnabled && notificationFocus || accessibilityModeEnabled && notificationToastsVisible"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "-workbench.action.chat.focusConfirmation",
+    "when": "accessibilityModeEnabled && chatIsEnabled && !chatHasQuestionCarousel"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "-workbench.action.chat.focusQuestionCarousel",
+    "when": "chatHasQuestionCarousel && inChat"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "-workbench.action.browser.quickOpen",
+    "when": "activeEditor == 'workbench.editor.browser'"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "-workbench.action.openAgentsWindow",
+    "when": "chatHasCreatedSessionInAgentsWindow && config.chat.agent.enabled && !accessibilityModeEnabled && !chatSetupDisabledInWorkspace && !chatSetupHidden && !isAuxiliaryWindow && !isSessionsWindow"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "-workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!isSessionsWindow && !terminalFocus"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.browser.addElementToChat",
+    "when": "browserHasUrl && chatIsEnabled && !browserHasError && activeEditor == 'workbench.editor.browser'"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "workbench.view.extension.codexSecondaryViewContainer"
   }
 ]
