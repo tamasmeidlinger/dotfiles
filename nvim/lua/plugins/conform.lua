@@ -6,7 +6,6 @@ return {
       javascript = { "prettier" },
       typescript = { "prettier" },
       json = { "prettier" },
-      blade = { "blade-formatter" },
     },
   },
 }
