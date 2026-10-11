@@ -7,7 +7,7 @@
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true
   },
   "[javascript]": {
@@ -29,6 +29,11 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features",
     "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true,
+    "editor.indentSize": 2
   },
   // WORKBENCH SETTINGS
   "workbench.statusBar.visible": false,
@@ -134,10 +139,39 @@
   "vim.easymotion": true,
   // Normal mode keybindings
   "vim.normalModeKeyBindingsNonRecursive": [
+    // {
+    //     // s → EasyMotion forward (1 char)
+    //     "before": [
+    //         "s"
+    //     ],
+    //     "after": [
+    //         "<leader>",
+    //         "<leader>",
+    //         "f"
+    //     ],
+    // },
+    // {
+    //     // S → EasyMotion backward (1 char)
+    //     "before": [
+    //         "S"
+    //     ],
+    //     "after": [
+    //         "<leader>",
+    //         "<leader>",
+    //         "F"
+    //     ],
+    // },
     {
-      // s → EasyMotion forward (1 char)
       "before": ["s"],
-      "after": ["<leader>", "<leader>", "f"]
+      "commands": ["flash-vscode.start"]
+    },
+    {
+      "before": ["S"],
+      "commands": ["flash-vscode.startSelection"]
+    },
+    {
+      "before": ["<Esc>"],
+      "commands": ["flash-vscode.exit"]
     },
     {
       // H → previous tab
@@ -148,11 +182,6 @@
       // L → next tab
       "before": ["L"],
       "commands": ["workbench.action.nextEditor"]
-    },
-    {
-      // S → EasyMotion backward (1 char)
-      "before": ["S"],
-      "after": ["<leader>", "<leader>", "F"]
     },
     {
       "before": ["<leader>", "e"],
@@ -179,8 +208,18 @@
   ],
   "workbench.editor.empty.hint": "hidden",
   "js/ts.updateImportsOnFileMove.enabled": "always",
-  "chat.disableAIFeatures": true,
   "explorer.confirmPasteNative": false,
-  "workbench.colorTheme": "Dark Modern",
-  "workbench.activityBar.location": "hidden"
+  "workbench.colorTheme": "Dark+",
+  "editor.inlineSuggest.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "chat.viewSessions.orientation": "stacked",
+  "flash-vscode.caseSensitive": false,
+  "flash-vscode.dimOpacity": "0.65",
+  "flash-vscode.matchColor": "#88ffffff",
+  "flash-vscode.matchFontWeight": "bold",
+  "flash-vscode.labelColor": "#ffffff",
+  "flash-vscode.labelBackgroundColor": "#171717",
+  "flash-vscode.labelQuestionBackgroundColor": "#171717",
+  "flash-vscode.labelFontWeight": "bold",
+  "flash-vscode.labelKeys": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[]{}|;:'\",.<>/?"
 }
