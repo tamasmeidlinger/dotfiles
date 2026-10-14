@@ -43,7 +43,7 @@
   "workbench.fontAliasing": "antialiased",
   "workbench.editor.useModal": "off",
   "workbench.browser.showInTitleBar": false,
-  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.tips.enabled": false,
   "workbench.editor.enablePreview": false,
   "workbench.startupEditor": "none",
@@ -53,7 +53,7 @@
   "workbench.tree.indent": 15,
   "workbench.colorCustomizations": {
     "sideBar.background": "#171717",
-    "editor.lineHighlightBackground": "#E3E3E3",
+    "editor.lineHighlightBackground": "#171717",
     "editor.background": "#171717",
     "editorGutter.background": "#171717",
     "tab.activeBackground": "#202020",
@@ -63,7 +63,9 @@
     "tab.activeBorderTop": "#404040",
     "titleBar.activeBackground": "#171717",
     "titleBar.inactiveBackground": "#171717",
-    "editorGroupHeader.connectedTabsBackground": "#171717"
+    "editorGroupHeader.connectedTabsBackground": "#171717",
+    "activityBar.background": "#191919",
+    "activityBar.activeBackground": "#2f2f2f"
   },
   // EDITOR SETTINGS
   "editor.fontFamily": "CaskaydiaMono Nerd Font",
@@ -211,7 +213,6 @@
   "explorer.confirmPasteNative": false,
   "workbench.colorTheme": "Dark+",
   "editor.inlineSuggest.enabled": false,
-  "workbench.activityBar.location": "hidden",
   "chat.viewSessions.orientation": "stacked",
   "flash-vscode.caseSensitive": false,
   "flash-vscode.dimOpacity": "0.65",
