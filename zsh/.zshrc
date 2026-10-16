@@ -11,6 +11,7 @@ fi
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/18/bin
+export PATH="$(brew --prefix python@3.14)/libexec/bin:$(brew --prefix python@3.14)/bin:$PATH"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
@@ -124,6 +125,8 @@ alias lsd="eza -lh1 --icons always"
 alias lst="eza --icons never -T -L"
 alias dod="uv run --project ~/code/to-do python ~/code/to-do/textual-tui"
 alias f="yazi"
+alias lg="lazygit"
+alias csgit="leaf ~/markdowns/cheat-sheets/git.md"
 
 function cdi() {
   local dir
