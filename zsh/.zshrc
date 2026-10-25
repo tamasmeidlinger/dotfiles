@@ -123,10 +123,17 @@ alias fzf="fzf -m"
 alias ls="eza -1 --icons always"
 alias lsd="eza -lh1 --icons always"
 alias lst="eza --icons never -T -L"
+alias v="nvim"
 alias dod="uv run --project ~/code/to-do python ~/code/to-do/textual-tui"
 alias f="yazi"
 alias lg="lazygit"
 alias csgit="leaf ~/markdowns/cheat-sheets/git.md"
+alias csdocker="leaf ~/markdowns/cheat-sheets/docker.md"
+alias cssql="leaf ~/markdowns/cheat-sheets/sql.md"
+alias cspy="leaf ~/markdowns/cheat-sheets/python.md"
+alias themecat="bash ~/theme-switcher/catppuccin/catppuccin.sh"
+alias themebase="bash ~/theme-switcher/basic/basic.sh"
+alias themeeverf="bash ~/theme-switcher/everforest/everforest.sh"
 
 function cdi() {
   local dir
