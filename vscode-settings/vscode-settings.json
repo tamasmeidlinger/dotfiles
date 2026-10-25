@@ -1,41 +1,4 @@
 {
-  // DEFAULT FORMATTERS
-  // "[php]": {
-  //   "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
-  // },
-  "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnSave": true
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
-    "editor.formatOnSave": true
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
-    "editor.formatOnSave": true,
-    "editor.indentSize": 2
-  },
-  // WORKBENCH SETTINGS
   "workbench.statusBar.visible": false,
   "workbench.navigationControl.enabled": false,
   "workbench.layoutControl.enabled": false,
@@ -51,23 +14,23 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.tree.indent": 15,
+  "workbench.colorTheme": "Dark+",
   "workbench.colorCustomizations": {
-    "sideBar.background": "#171717",
-    "editor.lineHighlightBackground": "#171717",
-    "editor.background": "#171717",
-    "editorGutter.background": "#171717",
-    "tab.activeBackground": "#202020",
+    "sideBar.background": "#1e1e1e",
+    "editor.lineHighlightBackground": "#1e1e1e",
+    "editor.background": "#1e1e1e",
+    "editorGutter.background": "#1e1e1e",
+    "tab.activeBackground": "#292929",
     "tab.activeForeground": "#ededed",
-    "tab.inactiveBackground": "#171717",
-    "tab.border": "#202020",
-    "tab.activeBorderTop": "#404040",
-    "titleBar.activeBackground": "#171717",
-    "titleBar.inactiveBackground": "#171717",
-    "editorGroupHeader.connectedTabsBackground": "#171717",
-    "activityBar.background": "#191919",
-    "activityBar.activeBackground": "#2f2f2f"
+    "tab.inactiveBackground": "#1e1e1e",
+    "tab.border": "#1e1e1e",
+    "tab.activeBorderTop": "#1e1e1e",
+    "titleBar.activeBackground": "#1e1e1e",
+    "titleBar.inactiveBackground": "#1e1e1e",
+    "editorGroupHeader.connectedTabsBackground": "#1e1e1e",
+    "activityBar.background": "#1e1e1e",
+    "activityBar.activeBackground": "#292929"
   },
-  // EDITOR SETTINGS
   "editor.fontFamily": "CaskaydiaMono Nerd Font",
   "editor.formatOnSave": true,
   "editor.wordWrap": "on",
@@ -102,14 +65,6 @@
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.minimap.enabled": false,
-  "editor.semanticTokenColorCustomizations": {
-    "[React Theme]": {
-      "rules": {
-        "variable": "#E6E6E6"
-      }
-    }
-  },
-  // OTHER SETTINGS
   "problems.decorations.enabled": true,
   "explorer.decorations.badges": true,
   "explorer.decorations.colors": true,
@@ -134,35 +89,9 @@
   "chat.titleBar.openInAgentsWindow.enabled": false,
   "svelte.enable-ts-plugin": true,
   "python.analysis.typeCheckingMode": "standard",
-  // VIM SETTINGS
-  // Use space as leader key
   "vim.leader": " ",
-  // Enable EasyMotion
   "vim.easymotion": true,
-  // Normal mode keybindings
   "vim.normalModeKeyBindingsNonRecursive": [
-    // {
-    //     // s → EasyMotion forward (1 char)
-    //     "before": [
-    //         "s"
-    //     ],
-    //     "after": [
-    //         "<leader>",
-    //         "<leader>",
-    //         "f"
-    //     ],
-    // },
-    // {
-    //     // S → EasyMotion backward (1 char)
-    //     "before": [
-    //         "S"
-    //     ],
-    //     "after": [
-    //         "<leader>",
-    //         "<leader>",
-    //         "F"
-    //     ],
-    // },
     {
       "before": ["s"],
       "commands": ["flash-vscode.start"]
@@ -176,12 +105,10 @@
       "commands": ["flash-vscode.exit"]
     },
     {
-      // H → previous tab
       "before": ["H"],
       "commands": ["workbench.action.previousEditor"]
     },
     {
-      // L → next tab
       "before": ["L"],
       "commands": ["workbench.action.nextEditor"]
     },
@@ -190,17 +117,14 @@
       "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     {
-      // Open command pallette
       "before": ["<leader>", "j"],
       "commands": ["workbench.action.showCommands"]
     },
     {
-      // Open file searcher
       "before": ["<leader>", "f"],
       "commands": ["workbench.action.quickOpen"]
     },
     {
-      // Go to definition
       "before": ["<leader>", "c", "c"],
       "commands": ["workbench.action.quickOpen"]
     }
@@ -211,9 +135,7 @@
   "workbench.editor.empty.hint": "hidden",
   "js/ts.updateImportsOnFileMove.enabled": "always",
   "explorer.confirmPasteNative": false,
-  "workbench.colorTheme": "Dark+",
   "editor.inlineSuggest.enabled": false,
-  "chat.viewSessions.orientation": "stacked",
   "flash-vscode.caseSensitive": false,
   "flash-vscode.dimOpacity": "0.65",
   "flash-vscode.matchColor": "#88ffffff",
@@ -222,5 +144,38 @@
   "flash-vscode.labelBackgroundColor": "#171717",
   "flash-vscode.labelQuestionBackgroundColor": "#171717",
   "flash-vscode.labelFontWeight": "bold",
-  "flash-vscode.labelKeys": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[]{}|;:'\",.<>/?"
+  "flash-vscode.labelKeys": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[]{}|;:'\",.<>/?",
+  "chat.viewSessions.orientation": "stacked",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true,
+    "editor.indentSize": 2
+  }
 }
