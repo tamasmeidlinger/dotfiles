@@ -131,9 +131,9 @@ alias csgit="leaf ~/markdowns/cheat-sheets/git.md"
 alias csdocker="leaf ~/markdowns/cheat-sheets/docker.md"
 alias cssql="leaf ~/markdowns/cheat-sheets/sql.md"
 alias cspy="leaf ~/markdowns/cheat-sheets/python.md"
-alias themecat="bash ~/theme-switcher/catppuccin/catppuccin.sh"
-alias themebase="bash ~/theme-switcher/basic/basic.sh"
-alias themeeverf="bash ~/theme-switcher/everforest/everforest.sh"
+alias themecat="zsh ~/theme-switcher/catppuccin/catppuccin.sh && reload-theme"
+alias themebase="zsh ~/theme-switcher/basic/basic.sh && reload-theme"
+alias themeeverf="zsh ~/theme-switcher/everforest/everforest.sh && reload-theme"
 
 function cdi() {
   local dir
@@ -149,3 +149,8 @@ esac
 # pnpm end
 
 eval "$(zoxide init zsh --cmd cd)"
+
+reload-theme() {
+  source ~/.p10k.zsh
+  p10k reload
+}
