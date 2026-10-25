@@ -21,11 +21,19 @@ if vim.bo.filetype == "markdown" then
   vim.opt_local.spell = false
 end
 
-vim.api.nvim_create_autocmd("Signal", {
-  pattern = "SIGUSR1",
-  callback = function()
+-- vim.api.nvim_create_autocmd("Signal", {
+--   pattern = "SIGUSR1",
+--   callback = function()
+--     vim.cmd("redraw!")
+--     vim.notify("Theme refreshed")
+--   end,
+-- })
+
+local signal = vim.uv.new_signal()
+signal:start(vim.uv.constants.SIGUSR1, function()
+  vim.schedule(function()
     -- vim.cmd.colorscheme("catppuccin-frappe")
     vim.cmd("redraw!")
     vim.notify("Theme refreshed")
-  end,
-})
+  end)
+end)
