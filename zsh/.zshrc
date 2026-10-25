@@ -132,7 +132,7 @@ alias csdocker="leaf ~/markdowns/cheat-sheets/docker.md"
 alias cssql="leaf ~/markdowns/cheat-sheets/sql.md"
 alias cspy="leaf ~/markdowns/cheat-sheets/python.md"
 alias themecat="zsh ~/theme-switcher/catppuccin/catppuccin.sh && reload-theme"
-alias themebase="zsh ~/theme-switcher/basic/basic.sh && reload-theme"
+alias themebasic="zsh ~/theme-switcher/basic/basic.sh && reload-theme"
 alias themeeverf="zsh ~/theme-switcher/everforest/everforest.sh && reload-theme"
 
 function cdi() {
