@@ -20,3 +20,12 @@ vim.api.nvim_create_autocmd("FileType", {
 if vim.bo.filetype == "markdown" then
   vim.opt_local.spell = false
 end
+
+vim.api.nvim_create_autocmd("Signal", {
+  pattern = "SIGUSR1",
+  callback = function()
+    -- vim.cmd.colorscheme("catppuccin-frappe")
+    vim.cmd("redraw!")
+    vim.notify("Theme refreshed")
+  end,
+})
