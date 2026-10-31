@@ -1,0 +1,17 @@
+/* Font */
+*,
+*::before,
+*::after {
+  font-family: "CaskaydiaMono Nerd Font", monospace !important;
+  font-weight: 400 !important;
+}
+
+/* Active tab text color */
+label.tab-text.tab-label[selected] {
+  color: #c2beaa;
+}
+
+/* Bookmarks text color */
+label.toolbarbutton-text {
+  color: #7b9cb9;
+}
