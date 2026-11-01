@@ -44,7 +44,7 @@ alias v="nvim"
 alias f="yazi"
 alias lg="lazygit"
 # To-do tui
-alias dod="TEXTUAL_THEME=catppuccin-frappe uv run --project ~/tools/to-do python ~/tools/to-do/textual-tui"
+alias dod="TEXTUAL_THEME=tamasm uv run --project ~/tools/to-do python ~/tools/to-do/textual-tui"
 # Theme switchers
 alias themecat="zsh ~/tools/theme-switcher/catppuccin/catppuccin.sh && reload-theme && source ~/.zshrc"
 alias themebasic="zsh ~/tools/theme-switcher/basic/basic.sh && reload-theme && source ~/.zshrc"
@@ -55,6 +55,29 @@ alias csgit="leaf ~/markdowns/cheat-sheets/git.md"
 alias csdocker="leaf ~/markdowns/cheat-sheets/docker.md"
 alias cssql="leaf ~/markdowns/cheat-sheets/sql.md"
 alias cspy="leaf ~/markdowns/cheat-sheets/python.md"
+# Fastfetch
+alias ff="clear && fastfetch"
+
+# ==============================
+# FZF
+# ==============================
+
+source <(fzf --zsh)
+
+source "$HOMEBREW_PREFIX/opt/fzf-tab/share/fzf-tab/fzf-tab.zsh"
+
+# FZF-TAB appearance
+zstyle ':fzf-tab:*' fzf-flags \
+  --height=60% \
+  --layout=reverse \
+  --border=rounded \
+  --info=inline-right \
+  --prompt='❯ ' \
+  --pointer='❯' \
+  --marker='▌' \
+  --color='bg:#292c35,bg+:#292c35,fg:#cdd6f4,fg+:#cdd6f4' \
+  --color='hl:#89dceb,hl+:#89dceb,prompt:#89dceb,pointer:#89dceb' \
+  --color='marker:#f38ba8,border:#49b6c8,info:#6c7086'
 
 # ==============================
 # FUNCTIONS
