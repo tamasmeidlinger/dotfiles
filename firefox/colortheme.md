@@ -16,6 +16,9 @@ blue-1: 7AA9CD
 blue-2: 8BBADE
 blue-2: 9CCBEF
 
+green-t1: A5D98F
+green-t2: 77D2C6
+
 dark-blue: #6B8CA9
 dark-blue-2: #7b9cb9
 dark-yellow: #CAC6B2
