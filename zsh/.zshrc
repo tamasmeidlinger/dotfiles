@@ -64,6 +64,30 @@ alias ff="clear && fastfetch"
 
 source <(fzf --zsh)
 
+export FZF_DEFAULT_OPTS="
+  --style=minimal
+  --layout=reverse
+  --border=rounded
+  --padding=0
+  --info=inline
+  --prompt=''
+  --pointer='▶'
+  --marker='✓'
+  --color=bg:#292C35
+  --color=fg:#9CCBEF
+  --color=hl:#D3CFBB
+  --color=fg+:#C6D0F5
+  --color=bg+:#313549
+  --color=hl+:#D3CFBB
+  --color=info:#838BA7
+  --color=prompt:#8CAAEE
+  --color=pointer:#A5D98F
+  --color=marker:#A6D189
+  --color=spinner:#8CAAEE
+  --color=header:#A5ADCE
+  --color=border:#51576D
+"
+
 source "$HOMEBREW_PREFIX/opt/fzf-tab/share/fzf-tab/fzf-tab.zsh"
 
 # FZF-TAB appearance
