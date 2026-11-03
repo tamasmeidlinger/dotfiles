@@ -1,0 +1,105 @@
+# look configuration
+# Generated on first launch. Edit values and press Cmd+Shift+; to reload.
+
+# Backend indexing
+app_scan_roots=/Applications,/System/Applications
+app_scan_depth=3
+app_exclude_paths=
+app_exclude_names=
+file_scan_roots=
+file_scan_extra_roots=
+file_scan_depth=1
+file_scan_limit=500
+file_exclude_paths=
+ignored_patterns_sample=
+# File ignore patterns. Gitignore-style path globs: *, **, ?, [abc].
+# Format: ignored_patterns_<group>=Pattern1|Pattern2|Pattern3
+# macOS/Linux usually use ~/... or /... ; on Windows, C:\... is the safest documented form and ~ expands to your home dir.
+# ignored_patterns_browser=~/AppData/Local/BraveSoftware/**/*.log|~/AppData/Local/Google/Chrome/**/*.tmp
+# ignored_patterns_sqlite=~/Documents/git/project/**/*.db-wal|~/Documents/git/project/**/*.db-shm
+# ignored_patterns_temp=~/Downloads/*.tmp|~/Downloads/**/*.part
+lazy_indexing_enabled=true
+backend_log_level=error
+launch_at_login=true
+skip_dir_names=node_modules,target,build,dist,library,applications,old firefox data,deriveddata,pods,vendor,out,coverage,tmp,cache,venv
+
+# UI theme
+# Preset: catppuccin, tokyoNight, rosePine, gruvbox, dracula, kanagawa, kindle,
+# liquid (liquid needs macOS 26; it falls back to the classic surface below that).
+# A preset supplies base values; the ui_* keys below override it. The name stays
+# recorded as you tune, until you pick Custom. Empty = only the keys below.
+ui_theme=
+ui_tint_red=0.16
+ui_tint_green=0.17
+ui_tint_blue=0.20
+ui_tint_opacity=1.00
+ui_blur_material=underWindowBackground
+ui_blur_opacity=0.69
+ui_font_name=CaskaydiaMono Nerd Font
+ui_font_size=15
+ui_font_red=0.82
+ui_font_green=0.81
+ui_font_blue=0.73
+ui_font_opacity=1.00
+ui_border_thickness=2.02
+ui_border_red=0.47
+ui_border_green=0.66
+ui_border_blue=0.84
+ui_border_opacity=0.71
+
+# Running apps switcher: none, top, right, bottom
+running_apps_placement=none
+
+# Inner gap (points, 0-24) between the three home panes; 0 = classic flat layout
+inner_gap=4
+ui_surface_radius=0.00
+
+# Window layout: split (results + preview) or compact (smaller, results only)
+layout=compact
+
+# Apple Intelligence / AI features. ai_provider: appleIntelligence | ollama
+ai_enabled=false
+# ai_provider=appleIntelligence
+# Ollama (local) settings, used when ai_provider=ollama.
+# ollama_host=http://localhost:11434
+# ollama_model=qwen3.5:4b
+
+# Whether the calendar, clipboard, and remembered facts may be attached to
+# prompts when the AI provider is NOT on this machine (a remote ollama_host, or
+# a future cloud provider). Off means those answers are computed without that
+# context and say so.
+ai_allow_remote_context=false
+
+# Super actions: empty-state launchpad of quick toggles / actions.
+# false hides the strip and disables its keyboard accelerators.
+super_actions_enabled=false
+
+# Launcher animations (open cascade, selection glide, caret glide).
+# false shows every change instantly.
+animations_enabled=false
+
+# The hint line along the bottom and the author link. false hides both.
+hints_enabled=true
+
+# Search bar placeholder. Empty shows none.
+search_placeholder=Search...
+
+# Search aliases (apps + System Settings). Format: alias_<keyword>=Term1|Term2|Term3
+alias_note=Notion|Obsidian|Notes|Apple Notes|Bear|Logseq
+alias_code=Visual Studio Code|VSCode|Cursor|Windsurf|IntelliJ IDEA|PyCharm|WebStorm|Neovim|Xcode|Zed
+alias_term=Terminal|iTerm|iTerm2|Ghostty|WezTerm|Alacritty|Kitty|Warp
+alias_chat=Slack|Discord|Telegram|Messages
+alias_music=Spotify|Apple Music|Music
+alias_brow=Safari|Arc|Google Chrome|Chrome|Firefox|Brave
+
+# Added by look update
+localized_app_names=false
+clipboard_history_limit=10
+query_retention_seconds=5
+launcher_hotkey=cmd+space
+settings_blur_multiplier=0.62
+ai_provider=appleIntelligence
+ollama_host=http://localhost:11434
+ollama_model=qwen3.5:4b
+pomo_sessions=focus:30:,break:5:Short%20Break,focus:30:Review,break:5:Short%20Break,focus:30:Wrap%20Up,break:15:Long%20Break
+pomo_timer_style=modern
