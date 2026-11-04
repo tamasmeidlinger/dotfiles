@@ -21,16 +21,13 @@ export PATH="$PNPM_HOME/bin:$PATH"
 # OH MY ZSH
 # ==============================
 
-ZSH_THEME=""
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
   git
 )
 
 source "$ZSH/oh-my-zsh.sh"
-
-# Powerlevel10k installed through homebrew
-source "$(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme"
 
 # ==============================
 # ALIASES
@@ -46,10 +43,10 @@ alias lg="lazygit"
 # To-do tui
 alias dod="TEXTUAL_THEME=tamasm uv run --project ~/tools/to-do python ~/tools/to-do/textual-tui"
 # Theme switchers
-alias themecat="zsh ~/tools/theme-switcher/catppuccin/catppuccin.sh && reload-theme && source ~/.zshrc"
-alias themebasic="zsh ~/tools/theme-switcher/basic/basic.sh && reload-theme && source ~/.zshrc"
-alias themeeverf="zsh ~/tools/theme-switcher/everforest/everforest.sh && reload-theme && source ~/.zshrc"
-alias themet="zsh ~/tools/theme-switcher/tamasm/tamasm.sh && reload-theme && source ~/.zshrc"
+# alias themecat="zsh ~/tools/theme-switcher/catppuccin/catppuccin.sh && reload-theme && source ~/.zshrc"
+# alias themebasic="zsh ~/tools/theme-switcher/basic/basic.sh && reload-theme && source ~/.zshrc"
+# alias themeeverf="zsh ~/tools/theme-switcher/everforest/everforest.sh && reload-theme && source ~/.zshrc"
+# alias themet="zsh ~/tools/theme-switcher/tamasm/tamasm.sh && reload-theme && source ~/.zshrc"
 # Cheat sheets
 alias csgit="leaf ~/markdowns/cheat-sheets/git.md"
 alias csdocker="leaf ~/markdowns/cheat-sheets/docker.md"
