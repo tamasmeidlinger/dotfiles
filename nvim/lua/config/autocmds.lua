@@ -32,7 +32,7 @@ end
 local signal = vim.uv.new_signal()
 signal:start(vim.uv.constants.SIGUSR1, function()
   vim.schedule(function()
-    -- vim.cmd.colorscheme("catppuccin-frappe")
+    vim.cmd.colorscheme("catppuccin-frappe")
     vim.cmd("redraw!")
     vim.notify("Theme refreshed")
   end)
