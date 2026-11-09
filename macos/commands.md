@@ -22,3 +22,9 @@ defaults write -g NSConvolutionOverride1 -float 10
 defaults delete -g NSConvolutionOverride1
 defaults delete -g NSSplitViewItemGlassMinimumCornerRadius
 ```
+
+## If Volume/Brightness Popups Disappear
+
+```
+killall ControlCenter
+```
