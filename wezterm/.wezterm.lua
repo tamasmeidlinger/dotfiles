@@ -4,6 +4,7 @@ local config = wezterm.config_builder()
 
 config.font = wezterm.font("CaskaydiaMono Nerd Font", { weight = "DemiLight" })
 config.font_size = 17
+config.native_macos_fullscreen_mode = true
 
 config.enable_tab_bar = false
 
