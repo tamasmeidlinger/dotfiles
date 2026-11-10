@@ -27,6 +27,18 @@ return {
             },
           },
         },
+
+        gopls = {
+          settings = {
+            gopls = {
+              hints = {
+                parameterNames = false,
+                assignVariableTypes = false,
+                rangeVariableTypes = false,
+              },
+            },
+          },
+        },
       },
     },
   },
