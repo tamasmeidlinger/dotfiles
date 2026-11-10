@@ -16,6 +16,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME/bin:$PATH"
+export PATH="$PATH:/Users/tamasm/go/bin"
 
 # ==============================
 # OH MY ZSH
@@ -43,10 +44,10 @@ alias lg="lazygit"
 # To-do tui
 alias dod="TEXTUAL_THEME=tamasm uv run --project ~/tools/to-do python ~/tools/to-do/textual-tui"
 # Theme switchers
-# alias themecat="zsh ~/tools/theme-switcher/catppuccin/catppuccin.sh && reload-theme && source ~/.zshrc"
-# alias themebasic="zsh ~/tools/theme-switcher/basic/basic.sh && reload-theme && source ~/.zshrc"
-# alias themeeverf="zsh ~/tools/theme-switcher/everforest/everforest.sh && reload-theme && source ~/.zshrc"
-# alias themet="zsh ~/tools/theme-switcher/tamasm/tamasm.sh && reload-theme && source ~/.zshrc"
+alias themecat="zsh ~/tools/theme-switcher/catppuccin/catppuccin.sh && reload-theme && source ~/.zshrc"
+alias themebasic="zsh ~/tools/theme-switcher/basic/basic.sh && reload-theme && source ~/.zshrc"
+alias themeeverf="zsh ~/tools/theme-switcher/everforest/everforest.sh && reload-theme && source ~/.zshrc"
+alias themet="zsh ~/tools/theme-switcher/tamasm/tamasm.sh && reload-theme && source ~/.zshrc"
 # Cheat sheets
 alias csgit="leaf ~/markdowns/cheat-sheets/git.md"
 alias csdocker="leaf ~/markdowns/cheat-sheets/docker.md"
@@ -54,6 +55,23 @@ alias cssql="leaf ~/markdowns/cheat-sheets/sql.md"
 alias cspy="leaf ~/markdowns/cheat-sheets/python.md"
 # Fastfetch
 alias ff="clear && fastfetch"
+# Terminal Effects
+alias eff="uv run --project ~/code/terminal-effects python ~/code/terminal-effects/main.py"
+# Brew searches
+alias brewf="brew formulae 2>/dev/null | fzf"
+alias brewc="brew casks 2>/dev/null | fzf"
+alias brewl="brew list | fzf"
+
+brewi() {
+  local package
+  package=$(
+      {
+          brew formulae 2>/dev/null
+          brew casks 2>/dev/null
+      } | sort -u | fzf
+  ) || return
+  brew info "$package" | head -n 2
+}
 
 # ==============================
 # FZF
