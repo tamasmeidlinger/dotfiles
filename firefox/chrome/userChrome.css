@@ -15,3 +15,7 @@ label.tab-text.tab-label[selected] {
 label.toolbarbutton-text {
   color: #7b9cb9;
 }
+
+vbox.tab-background {
+  border-radius: 0 !important;
+}
