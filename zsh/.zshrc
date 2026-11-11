@@ -62,7 +62,7 @@ alias brewf="brew formulae 2>/dev/null | fzf"
 alias brewc="brew casks 2>/dev/null | fzf"
 alias brewl="brew list | fzf"
 
-brewi() {
+brewinf() {
   local package
   package=$(
       {
@@ -72,6 +72,18 @@ brewi() {
   ) || return
   brew info "$package" | head -n 2
 }
+
+brewins() {
+  local package
+  package=$(
+      {
+          brew formulae 2>/dev/null
+          brew casks 2>/dev/null
+      } | sort -u | fzf
+  ) || return
+  brew install "$package"
+}
+
 
 # ==============================
 # FZF
